@@ -1,104 +1,99 @@
----
-title: consola
-description: 
-published: true
-date: 2022-10-24T21:46:05.821Z
-tags: 
-editor: markdown
-dateCreated: 2022-10-24T19:59:07.786Z
----
+# WSl2 console setup
 
-# Configuración de mi consola linux wsl2
-### Fuente
+### Font
+
 **MesloLGS NF**
 ![wsl2-fuente.jpg](/wsl2-fuente.jpg)
 
-### Color de fondo
+### Background color
+
 ![wsl2-colores.jpg](/wsl2-colores.jpg)
 
-## OH MY ZSH
-[Oh my zsh](/https://ohmyz.sh/)
+## [OH MY ZSH](/https://ohmyz.sh/)
 
-Le agregué algunos alias y la instalacion del theme al final del archivo [.zshrc](/.zshrc)
+Aliases and theme are set at the end of the file [.zshrc](/.zshrc)
 
-El tema de **Oh my zsh** que uso es **p10k**
-
-https://github.com/romkatv/powerlevel10k
+The **Oh my zsh** set theme is [**p10k**](https://github.com/romkatv/powerlevel10k)
 
 Le cambie algunos colores en este archivo: [.p10k.zsh](/.p10k.zsh)
 ![colores-p10k.jpg](/colores-p10k.jpg)
 
 ## COLORS LS
+
 [colorls](/https://github.com/athityakumar/colorls)
 
-Se activa desde *zshrc.sh*
+Se activa desde _zshrc.sh_
+
 ```vim
 alias ls=colorls
 ```
 
-copie el yml de colores para personalizarlo en el archivo *~/.config/colorls/[dark_colors.yaml](/dark_colors.yaml)*
+copie el yml de colores para personalizarlo en el archivo _~/.config/colorls/[dark_colors.yaml](/dark_colors.yaml)_
 
 ```yaml
 # Main Colors
-unrecognized_file: '#888888'
-recognized_file:   '#FFFFFF'
-executable_file:   '#E2943A'
-dir:               green
+unrecognized_file: "#888888"
+recognized_file: "#FFFFFF"
+executable_file: "#E2943A"
+dir: green
 
 # Link
 dead_link: red
-link:      lime
+link: lime
 
 # special files
-socket:   '#FFFFFF'
-blockdev: '#FFFFFF'
-chardev:  '#FFFFFF'
+socket: "#FFFFFF"
+blockdev: "#FFFFFF"
+chardev: "#FFFFFF"
 
 # Access Modes
-write:     green
-read:      green
-exec:      '#E2943A'
-no_access: '#324E2C'
+write: green
+read: green
+exec: "#E2943A"
+no_access: "#324E2C"
 
 # Age
-day_old:     '#94DE9F'
-hour_old:    lime
-no_modifier: '#53824E'
+day_old: "#94DE9F"
+hour_old: lime
+no_modifier: "#53824E"
 
 # File Size
-file_large:  orange
-file_medium: '#CCCCCC'
-file_small:  '#888888'
+file_large: orange
+file_medium: "#CCCCCC"
+file_small: "#888888"
 
 # Random
 report: white
-user:   '#53824E'
-tree:   cyan
-empty:  yellow
-error:  red
-normal: '#E2943A'
+user: "#53824E"
+tree: cyan
+empty: yellow
+error: red
+normal: "#E2943A"
 
 # Git
-addition:     chartreuse
+addition: chartreuse
 modification: darkkhaki
-deletion:     darkred
-untracked:    darkorange
-unchanged:    forestgreen
+deletion: darkred
+untracked: darkorange
+unchanged: forestgreen
 ```
 
 ### BAT
+
 [0.15.4](/https://crates.io/crates/bat/0.15.4)
 
 Para que los cat se vean mas lindos agregue el plugin bat
 
 ![bat-cat.jpg](/bat-cat.jpg)
 
-Se activa desde *zshrc.sh*
+Se activa desde _zshrc.sh_
+
 ```vim
 alias cat=bat
 ```
 
 ### NEOFETCH
+
 [neofetch](/https://github.com/dylanaraps/neofetch)
 
 ![neofetch.jpg](/neofetch.jpg)
@@ -110,7 +105,7 @@ alias lla='ls -la'
 neofetch
 ```
 
-El logo de Weyland Yutani se configura en *.config/neofetch/config.conf*
+El logo de Weyland Yutani se configura en _.config/neofetch/config.conf_
 
 ```bash
 # Image Source
