@@ -1,113 +1,124 @@
-# WSl2 console setup
+# WSL2 console setup
 
-### Font
+---
 
-**MesloLGS NF**
-![wsl2-fuente.jpg](/wsl2-fuente.jpg)
+## Windows Terminal setup
+
+### Set font [**MesloLGS NF**](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Meslo.zip)
+
+You have to set the font for the Windows terminal
+
+![wsl2-fuente.jpg](/windows-terminal/wsl2-fuente.jpg)
 
 ### Background color
 
-![wsl2-colores.jpg](/wsl2-colores.jpg)
+You have to set the background color for the Windows terminal
 
-## [OH MY ZSH](/https://ohmyz.sh/)
+![wsl2-colores.jpg](/windows-terminal/wsl2-colores.jpg)
 
-Aliases and theme are set at the end of the file [.zshrc](/.zshrc)
+---
 
-The **Oh my zsh** set theme is [**p10k**](https://github.com/romkatv/powerlevel10k)
+## [OH MY ZSH](https://ohmyz.sh/)
 
-Le cambie algunos colores en este archivo: [.p10k.zsh](/.p10k.zsh)
-![colores-p10k.jpg](/colores-p10k.jpg)
+_Note:_ Aliases, intiations and custom configurations are set at the end of the file [.zshrc](/ohmyz/.zshrc)
 
-## COLORS LS
+### Set [**p10k**](https://github.com/romkatv/powerlevel10k) theme
 
-[colorls](/https://github.com/athityakumar/colorls)
+Edit [.zshrc](/ohmyz/.zshrc) file
 
-Se activa desde _zshrc.sh_
+    vim ~/.zshcr
+
+Uncomment and/or change ZSH_THEME line
+
+```bash
+...
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="powerlevel10k/powerlevel10k"
+...
+```
+
+### Customize **p10k** colors
+
+Edit [.p10k.zsh](/ohmyz/.p10k.zsh) file
+
+    vim ~/.p10k.zsh
+
+![colores-p10k.jpg](/ohmyz/colores-p10k.jpg)
+
+---
+
+## [COLOR LS](https://github.com/athityakumar/colorls)
+
+Add alias to end of [.zshrc](/ohmyz/.zshrc) file
 
 ```vim
+...
 alias ls=colorls
 ```
 
-copie el yml de colores para personalizarlo en el archivo _~/.config/colorls/[dark_colors.yaml](/dark_colors.yaml)_
+### Customize dark colors thene
 
-```yaml
-# Main Colors
-unrecognized_file: "#888888"
-recognized_file: "#FFFFFF"
-executable_file: "#E2943A"
-dir: green
+Make a copy of [dark_colors.yaml](/colorls/dark_colors.yaml)
 
-# Link
-dead_link: red
-link: lime
+    cp $(dirname $(gem which colorls))/yaml/dark_colors.yaml ~/.config/colorls/dark_colors.yaml
 
-# special files
-socket: "#FFFFFF"
-blockdev: "#FFFFFF"
-chardev: "#FFFFFF"
+Edit new configuration file
 
-# Access Modes
-write: green
-read: green
-exec: "#E2943A"
-no_access: "#324E2C"
+    vim ~/.config/colorls/dark_colors.yaml
 
-# Age
-day_old: "#94DE9F"
-hour_old: lime
-no_modifier: "#53824E"
+---
 
-# File Size
-file_large: orange
-file_medium: "#CCCCCC"
-file_small: "#888888"
+## [BAT](https://crates.io/crates/bat/0.15.4)
 
-# Random
-report: white
-user: "#53824E"
-tree: cyan
-empty: yellow
-error: red
-normal: "#E2943A"
+Beautify your cat command
 
-# Git
-addition: chartreuse
-modification: darkkhaki
-deletion: darkred
-untracked: darkorange
-unchanged: forestgreen
-```
-
-### BAT
-
-[0.15.4](/https://crates.io/crates/bat/0.15.4)
-
-Para que los cat se vean mas lindos agregue el plugin bat
-
-![bat-cat.jpg](/bat-cat.jpg)
-
-Se activa desde _zshrc.sh_
+Add alias to the end of [.zshrc](/ohmyz/.zshrc) file
 
 ```vim
+...
 alias cat=bat
 ```
 
-### NEOFETCH
+![bat-cat.jpg](/bat/bat-cat.jpg)
 
-[neofetch](/https://github.com/dylanaraps/neofetch)
+---
 
-![neofetch.jpg](/neofetch.jpg)
+## [NEOFETCH](https://github.com/dylanaraps/neofetch)
 
-lo agregué al inicio de terminal en el archivo: *https://github.com/dylanaraps/neofetch/rgrinberg.zsh*
+### Run neofech terminal start
+
+Edit [.zshrc](/ohmyz/.zshrc) file
+
+    vim ~/zshrc
+
+Add nofetch command to the end of the file
 
 ```vim
-alias lla='ls -la'
+...
 neofetch
 ```
 
-El logo de Weyland Yutani se configura en _.config/neofetch/config.conf_
+### Set Weyland Yutani logo in neofetch configuration file
+
+Make logos directory
+
+    mkdir ~/.config/neofetch/mis-logos
+
+Copy [logo file](/neofetch/weyland-yutani.ans) to logos directory
+
+    cp weyland_yunati.ans ~/.config/neofetch/.
+
+Edit neofetch [config.conf](/neofetch/config.conf) file
+
+    vim ~/.config/neofetch/config.conf
+
+Set the image logo source
 
 ```bash
+...
 # Image Source
 #
 # Which image or ascii file to display.
@@ -121,6 +132,21 @@ El logo de Weyland Yutani se configura en _.config/neofetch/config.conf_
 #       In ascii mode, distro ascii art will be used and in an image mode, your
 #       wallpaper will be used.e
 image_source="$HOME/.config/neofetch/mis-logos/weyland-yutani.ans"
+...
 ```
 
-[weyland-yutani.ans](/weyland-yutani.ans)
+## ![neofetch.jpg](/neofetch/neofetch.png)
+
+---
+
+## Files sumary
+
+- [.zshrc](/ohmyz/.zshrc) - **oh my zsh** Shell iniciation file
+
+- [.p10k.zsh](/ohmyz/.p10k.zsh) - **p10k** theme configuration file
+
+- [dark_colors.yaml](/colorls/dark_colors.yaml) - **colorls** configuration file
+
+- [weyland-yutani.ans](/neofetch/weyland-yutani.ans) - the ansi **Weyland Yutani logo**
+
+- [config.conf](/neofetch/config.conf) - **Neofetch** configuration file
