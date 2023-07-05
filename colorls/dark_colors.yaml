@@ -10,7 +10,7 @@ link: lime
 
 # special files
 socket: "#888888"
-blockdev: "#888888"
+blockdev: "#AAAAAA"
 chardev: "#888888"
 
 # Access Modes
