@@ -1,5 +1,9 @@
 # WSL2 console setup
 
+# [crontab](/crontab/README.md)
+
+# [Shell scripts](/scripts/README.md)
+
 ---
 
 ## Windows Terminal setup
@@ -20,7 +24,8 @@ Set the background color for the Windows terminal
 
 ## [OH MY ZSH](https://ohmyz.sh/)
 
-_Note: intiations are set at the end of the file [.zshrc](/ohmyz/.zshrc)_
+_Note: initiations are set at the end of the file [.zshrc](/ohmyz/.zshrc)_
+
 _Note: Aliases are declarated in [~/.config/aliases.sh](/ohmyz/aliases.sh)_
 
 ### Set [**p10k**](https://github.com/romkatv/powerlevel10k) theme
