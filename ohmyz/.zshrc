@@ -112,4 +112,10 @@ source $ZSH/oh-my-zsh.sh
 source $(dirname $(gem which colorls))/tab_complete.sh
 
 alias ls=colorls
-alias cat=bat
+alias cat=batcat
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+
+# monta truenas si esta prendido
+alias truenas='sudo mount -t drvfs '\\truenas\backup' /mnt/truenas'
+# ejecuto neofetch
+neofetch
