@@ -6,13 +6,13 @@
 
 ### Set font [**MesloLGS NF**](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Meslo.zip)
 
-You have to set the font for the Windows terminal
+Set the font for the Windows terminal
 
 ![wsl2-fuente.jpg](/windows-terminal/wsl2-fuente.jpg)
 
 ### Background color
 
-You have to set the background color for the Windows terminal
+Set the background color for the Windows terminal
 
 ![wsl2-colores.jpg](/windows-terminal/wsl2-colores.jpg)
 
@@ -20,7 +20,8 @@ You have to set the background color for the Windows terminal
 
 ## [OH MY ZSH](https://ohmyz.sh/)
 
-_Note:_ Aliases, intiations and custom configurations are set at the end of the file [.zshrc](/ohmyz/.zshrc)
+_Note: intiations are set at the end of the file [.zshrc](/ohmyz/.zshrc)_
+_Note: Aliases are declarated in [~/.config/aliases.sh](/ohmyz/aliases.sh)_
 
 ### Set [**p10k**](https://github.com/romkatv/powerlevel10k) theme
 
@@ -107,7 +108,7 @@ Make logos directory
 
     mkdir ~/.config/neofetch/mis-logos
 
-Copy [logo file](/neofetch/weyland-yutani.ans) to logos directory
+Copy [logo file](/neofetch/logos/weyland-yutani.ans) to logos directory
 
     cp weyland_yunati.ans ~/.config/neofetch/.
 
@@ -135,18 +136,24 @@ image_source="$HOME/.config/neofetch/mis-logos/weyland-yutani.ans"
 ...
 ```
 
+_Note: check de [logos directory](/neofetch/logos/) to see all logos:_
+
 ## ![neofetch.jpg](/neofetch/neofetch.png)
 
 ---
 
-## Files sumary
+## Files summary
 
 - [.zshrc](/ohmyz/.zshrc) - **oh my zsh** Shell iniciation file
 
 - [.p10k.zsh](/ohmyz/.p10k.zsh) - **p10k** theme configuration file
 
+- [aliases.sh](/ohmyz/aliases.sh) - bash aliases declarations
+
 - [dark_colors.yaml](/colorls/dark_colors.yaml) - **colorls** configuration file
 
-- [weyland-yutani.ans](/neofetch/weyland-yutani.ans) - the ansi **Weyland Yutani logo**
+- [weyland-yutani.ans](/neofetch/logos/weyland-yutani.ans) - the ansi **Weyland Yutani logo**
 
 - [config.conf](/neofetch/config.conf) - **Neofetch** configuration file
+
+- [logos directory](/neofetch/logos/) - Neofetch logos directory
