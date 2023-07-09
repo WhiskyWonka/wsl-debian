@@ -13,4 +13,6 @@ rsync -au "$HOME/.config/neofetch/logos" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/neo
 # Sync neofetch config file
 rsync -au "$HOME/.config/neofetch/config.conf" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/neofetch/config.confs"
 # Sync it self
-rsync -au "$HOME/.cron-tasks/config_sync.sh" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/scripts/config_sync.sh"
+rsync -au "$HOME/.my-scripts/config_sync.sh" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/scripts/config_sync.sh"
+
+cd $CONFIG_WSL_DEBIAN_REPOSITORY_PATH && touch hola.prueba
