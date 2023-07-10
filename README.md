@@ -2,7 +2,7 @@
 
 # [crontab](/crontab/README.md)
 
-# [Shell scripts](/scripts/README.md)
+# [Shell scripts](/.my-scripts/README.md)
 
 ---
 

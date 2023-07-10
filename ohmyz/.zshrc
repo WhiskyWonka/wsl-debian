@@ -116,3 +116,6 @@ source $HOME/.config/aliases.sh
 
 # ejecuto neofetch
 neofetch
+
+# Chedk if config repo has changed
+cd $HOME/.my-scripts/ && sh check_commit.sh
