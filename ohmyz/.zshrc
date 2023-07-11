@@ -118,4 +118,4 @@ source $HOME/.config/aliases.sh
 neofetch
 
 # Chedk if config repo has changed
-cd $HOME/.my-scripts/ && sh check_commit.sh
+sh $HOME/.my-scripts/check_commit.sh
