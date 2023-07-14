@@ -12,5 +12,7 @@ rsync  -au "$HOME/.config/colorls/dark_colors.yaml" "$CONFIG_WSL_DEBIAN_REPOSITO
 rsync -au "$HOME/.config/neofetch/logos" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/neofetch/"
 # Sync neofetch config file
 rsync -au "$HOME/.config/neofetch/config.conf" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/neofetch/config.confs"
+# Sync windows terminal config file
+rsync -au "/mnt/c/Users/rggri/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/wsl/settings.json"
 # Sync it self
 rsync -au "$HOME/.my-scripts" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH"

@@ -6,19 +6,13 @@
 
 ---
 
-## Windows Terminal setup
+## Windows Terminal setup (on wsl2 terminal: CTRL + SHIFT + P)
 
-### Set font [**MesloLGS NF**](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Meslo.zip)
+Set the font, colors, background color, etc, for the Windows terminal
 
-Set the font for the Windows terminal
-
-![wsl2-fuente.jpg](/windows-terminal/wsl2-fuente.jpg)
+[settings.json](/wsl/settings.json)
 
 ### Background color
-
-Set the background color for the Windows terminal
-
-![wsl2-colores.jpg](/windows-terminal/wsl2-colores.jpg)
 
 ---
 
