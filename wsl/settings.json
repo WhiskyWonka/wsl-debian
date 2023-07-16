@@ -45,9 +45,10 @@
     {
         "defaults": 
         {
+            "colorScheme": "Campbell",
             "font": 
             {
-                "face": "MesloLGM Nerd Font"
+                "face": "Hurmit Nerd Font"
             }
         },
         "list": 
@@ -71,9 +72,10 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "colorScheme": "Campbell",
                 "font": 
                 {
-                    "face": "Hurmit Nerd Font Mono",
+                    "face": "Hurmit Nerd Font",
                     "size": 14.0
                 },
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",

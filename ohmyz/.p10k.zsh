@@ -37,6 +37,8 @@
     # prompt_char           # prompt symbol
   )
 
+  typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'󰯉'
+
   # The list of segments shown on the right. Fill it with less important segments.
   # Right prompt on the last prompt line (where you are typing your commands) gets
   # automatically hidden when the input line reaches it. Right prompt above the
