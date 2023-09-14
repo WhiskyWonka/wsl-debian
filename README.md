@@ -18,11 +18,19 @@ Set the font, colors, background color, etc, for the Windows terminal
 
 ## [OH MY ZSH](https://ohmyz.sh/)
 
+Instalation
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 _Note: initiations are set at the end of the file [.zshrc](/ohmyz/.zshrc)_
 
 _Note: Aliases are declarated in [~/.config/aliases.sh](/ohmyz/aliases.sh)_
 
 ### Set [**p10k**](https://github.com/romkatv/powerlevel10k) theme
+
+p10k instalation
+
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 Edit [.zshrc](/ohmyz/.zshrc) file
 
