@@ -52,6 +52,12 @@ Edit [.p10k.zsh](/ohmyz/.p10k.zsh) file
 
 ## [COLOR LS](https://github.com/athityakumar/colorls)
 
+note: ruby and gem instalation on debian:
+
+    sudo apt install ruby-full
+    sudo apt-get install build-essential
+    sudo gem install colorls
+
 Add alias to end of [.zshrc](/ohmyz/.zshrc) file
 
 ```vim
