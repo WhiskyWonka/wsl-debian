@@ -77,7 +77,17 @@ alias ls=colorls
 
 Make a copy of [dark_colors.yaml](/colorls/dark_colors.yaml)
 
+Create directory
+
+    mkdir ~/.config/colorls
+
+Copy original o download customized from this repo
+
     cp $(dirname $(gem which colorls))/yaml/dark_colors.yaml ~/.config/colorls/dark_colors.yaml
+
+OR
+
+    wget https://raw.githubusercontent.com/WhiskyWonka/wsl-debian/master/colorls/dark_colors.yaml
 
 Edit new configuration file
 
