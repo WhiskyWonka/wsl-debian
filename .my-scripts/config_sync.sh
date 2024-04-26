@@ -5,7 +5,7 @@ rsync  -au "$HOME/.zshrc" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/ohmyz/.zshrc"
 # Sync p10k confuration file (oh my zh theme)
 rsync  -au "$HOME/.p10k.zsh" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/ohmyz/.p10k.zsh"
 # Sync aliases file
-rsync  -au "$HOME/.config/aliases.sh" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/ohmyz/aliases.sh"
+rsync  -au "$HOME/.my-scripts/aliases.sh" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/ohmyz/aliases.sh"
 # Syc colorls dark theme configuration
 rsync  -au "$HOME/.config/colorls/dark_colors.yaml" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/colorls/dark_colors.yaml"
 # Sync neofetch logos directory

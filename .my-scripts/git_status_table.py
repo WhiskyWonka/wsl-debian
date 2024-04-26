@@ -12,12 +12,29 @@ from terminaltables import SingleTable
 
 import sys
 
+def get_colored_text(text):
+    if 'ok' in text.lower():
+        return '{autogreen}' + text + '{/autogreen}'
+    elif 'error' in text.lower():
+        return '{autored}' + text + '{/autored}'
+    else:
+        return text
+
+def get_line(data, x, corte):
+    line = []
+    for i in range(0, corte):
+        line.append(Color(get_colored_text(data[x+i])))
+
+    return line
 
 def table_server_status():
     """Return table string to be printed."""
 
     title = sys.argv[1]
-    table_data = [[Color(sys.argv[x+1]), Color('{autored}' + sys.argv[x] + '{/autored}')] for x in range(2, len(sys.argv), 2)]
+    corte = int(sys.argv[2])
+    data = sys.argv[2:]
+
+    table_data = [get_line(data, x, corte) for x in range(1, len(data), corte)]
 
     table_instance = SingleTable(table_data, title)
     table_instance.inner_heading_row_border = False

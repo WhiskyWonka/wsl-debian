@@ -41,7 +41,8 @@ print_info() {
     # info "Song" song
     # [[ "$player" ]] && prin "Music Player" "$player"
     info "${cl2}Local IP" local_ip
-    info "${cl2}Public IP" public_ip
+    # info "${cl2}Public IP" public_ip
+    info "Public IP" public_ip
     # info "Users" users
     # info "Locale" locale  # This only works on glibc systems.
 

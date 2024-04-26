@@ -109,13 +109,19 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# tab complete
 source $(dirname $(gem which colorls))/tab_complete.sh
 
+# Sync config directories
+source $HOME/.my-scripts/config_sync.sh
 # Custom aliases file
-source $HOME/.config/aliases.sh
+source $HOME/.my-scripts/aliases.sh
 
 # ejecuto neofetch
 neofetch
 
+# Custom mount
+source $HOME/.my-scripts/tablemounts.sh
 # Chedk if config repo has changed
 sh $HOME/.my-scripts/check_commit.sh
