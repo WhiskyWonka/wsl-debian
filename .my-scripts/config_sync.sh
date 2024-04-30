@@ -16,3 +16,8 @@ rsync -au "$HOME/.config/neofetch/config.conf" "$CONFIG_WSL_DEBIAN_REPOSITORY_PA
 rsync -au "/mnt/c/Users/rggri/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH/wsl/settings.json"
 # Sync it self
 rsync -au "$HOME/.my-scripts" "$CONFIG_WSL_DEBIAN_REPOSITORY_PATH"
+
+# BOLDT repo path
+BOLDT_REPOSITORY_PATH="$HOME/BOLDT"
+# Sync BOLDT documentation from note to pc repo
+rsync -au "/mnt/rgg-lenovo" "$BOLDT_REPOSITORY_PATH"

@@ -123,5 +123,7 @@ neofetch
 
 # Custom mount
 source $HOME/.my-scripts/tablemounts.sh
-# Chedk if config repo has changed
-sh $HOME/.my-scripts/check_commit.sh
+# Check if config repo has changed
+sh $HOME/.my-scripts/check_commit_config_repo.sh
+# Check if BOLDT DOCS repo has changed
+sh $HOME/.my-scripts/check_commit_boldt_repo.sh
