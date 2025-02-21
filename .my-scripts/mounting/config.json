@@ -1,0 +1,14 @@
+{
+  "directories": [
+    {
+      "mount": true,
+      "local_path": "/mnt/rgg-lenovo",
+      "share_path": "\\\\rgg-lenovo\\compartida"
+    },
+    {
+      "mount": false,
+      "local_path": "/mnt/truenas",
+      "share_path": "\\\\truenas\\backup"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "mounting",
+  "version": "1.0.0",
+  "main": "mounting_settings.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "enquirer": "^2.4.1",
+    "inquirer": "^12.4.2",
+    "prompts": "^2.4.2",
+    "readline": "^1.3.0"
+  },
+  "keywords": [],
+  "description": ""
+}

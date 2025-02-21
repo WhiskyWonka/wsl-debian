@@ -17,6 +17,13 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -127,3 +134,8 @@ source $HOME/.my-scripts/tablemounts.sh
 sh $HOME/.my-scripts/check_commit_config_repo.sh
 # Check if BOLDT DOCS repo has changed
 sh $HOME/.my-scripts/check_commit_boldt_repo.sh
+# fnm
+export PATH=$HOME/.fnm:$PATH
+eval "$(fnm env)"
+# autocomplete
+plugins=(git zsh-autosuggestions zsh-completions)
